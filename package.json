@@ -1,0 +1,19 @@
+{
+  "name": "nailsmollys",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium Nagelstudio Website — nailsmollys.de",
+  "scripts": {
+    "dev": "npx serve . -l 3001",
+    "start": "npx serve . -l 3001"
+  },
+  "keywords": [
+    "nagelstudio",
+    "goeppingen",
+    "manikuere",
+    "naildesign",
+    "landing-page"
+  ],
+  "author": "nailsmollys.de",
+  "license": "ISC"
+}

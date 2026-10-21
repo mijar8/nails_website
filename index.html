@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nailsmollys.de — Nagelstudio Göppingen</title>
+  <meta name="description" content="Professionelles Nagelstudio in Göppingen. Maniküre, Gel, Nagelverlängerung & individuelles Nageldesign. Jetzt Termin online buchen.">
+  <meta name="keywords" content="Nagelstudio Göppingen, Maniküre, Nagelverlängerung, Gelmodellage, Nageldesign, Shellac, nailsmollys">
+  <link rel="canonical" href="https://nailsmollys.de/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nailsmollys.de/">
+  <meta property="og:title" content="nailsmollys.de — Nagelstudio Göppingen">
+  <meta property="og:description" content="Professionelle Maniküre, Gel und Nagelverlängerung in Göppingen — sorgfältig und individuell.">
+  <meta property="og:image" content="images/gal-1.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Schema.org JSON-LD Microdata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "nailsmollys.de",
+    "description": "Professionelles Nagelstudio in Göppingen",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Göppingen",
+      "addressRegion": "Baden-Württemberg",
+      "addressCountry": "DE"
+    },
+    "telephone": "+49 171 9273253",
+    "priceRange": "€€",
+    "openingHours": "Tu-Sa 10:00-19:00",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "120"
+    }
+  }
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- MOBILE DRAWER -->
+  <nav class="drawer" id="drawer" aria-label="Mobile Navigation">
+    <button class="drawer-close" onclick="MollysApp.closeDrawer()" aria-label="Menü schließen">✕</button>
+    <a href="#services" onclick="MollysApp.closeDrawer()" data-i="nav.services">Leistungen</a>
+    <a href="#gallery" onclick="MollysApp.closeDrawer()" data-i="nav.gallery">Galerie</a>
+    <a href="#why" onclick="MollysApp.closeDrawer()" data-i="why.title">Über mich</a>
+    <a href="#booking" onclick="MollysApp.closeDrawer()" data-i="nav.booking">Buchung</a>
+    <a href="#faq" onclick="MollysApp.closeDrawer()" data-i="nav.faq">FAQ</a>
+    <a href="#contact" onclick="MollysApp.closeDrawer()" data-i="nav.contact">Kontakt</a>
+    <div class="drawer-lang">
+      <button onclick="MollysApp.setLanguage('de')" data-lang="de">DE</button>
+      <button onclick="MollysApp.setLanguage('ru')" data-lang="ru">RU</button>
+      <button onclick="MollysApp.setLanguage('en')" data-lang="en">EN</button>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="wrap header-inner">
+      <a href="#" class="logo">nailsmollys<span>.de</span></a>
+      <div class="nav-row">
+        <ul class="nav-links">
+          <li><a href="#services" data-i="nav.services">Leistungen</a></li>
+          <li><a href="#gallery" data-i="nav.gallery">Galerie</a></li>
+          <li><a href="#booking" data-i="nav.booking">Buchung</a></li>
+          <li><a href="#faq" data-i="nav.faq">FAQ</a></li>
+          <li><a href="#contact" data-i="nav.contact">Kontakt</a></li>
+        </ul>
+        <div class="lang-sw">
+          <button onclick="MollysApp.setLanguage('de')" data-lang="de">DE</button>
+          <button onclick="MollysApp.setLanguage('ru')" data-lang="ru">RU</button>
+          <button onclick="MollysApp.setLanguage('en')" data-lang="en">EN</button>
+        </div>
+        <a href="#booking" class="btn btn-primary" data-i="nav.book">Termin buchen</a>
+      </div>
+      <button class="hamburger" onclick="MollysApp.openDrawer()" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-meta reveal">
+          <div class="hero-dot"></div>
+          <span class="t-label" data-i="hero.location">Nagelstudio · Göppingen</span>
+        </div>
+        <h1 class="t-h1 hero-h1 reveal d1" data-i="hero.h1">
+          Gepflegte Nägel.<br>Individuelles Design.
+        </h1>
+        <p class="hero-sub reveal d2" data-i="hero.sub">
+          Professionelle Maniküre, Gel und Nagelverlängerung in Göppingen — sorgfältig und individuell.
+        </p>
+        <div class="hero-actions reveal d3">
+          <a href="#booking" class="btn btn-primary" data-i="hero.cta_book">Termin buchen</a>
+          <a href="#services" class="btn btn-ghost" data-i="hero.cta_services">Leistungen</a>
+        </div>
+        <div class="hero-proof reveal d4">
+          <div class="proof-item">
+            <div class="proof-n">7+</div>
+            <div class="proof-l" data-i="hero.proof1">Jahre Erfahrung</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-n">500+</div>
+            <div class="proof-l" data-i="hero.proof2">Zufriedene Kundinnen</div>
+          </div>
+          <div class="proof-item">
+            <div class="proof-n">★ 5.0</div>
+            <div class="proof-l" data-i="hero.proof3">Bewertung</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services">
+      <div class="wrap">
+        <div class="sh reveal">
+          <div class="t-label" data-i="svc.label">Leistungen & Preise</div>
+          <h2 class="t-h2" style="margin-top:10px" data-i="svc.title">Was ich anbiete</h2>
+        </div>
+        <div class="svc-table reveal d1" id="svcTable">
+          <!-- Populated dynamically via JS -->
+        </div>
+        <p class="svc-note reveal d2" data-i="svc.note">
+          Preise sind Richtwerte. Der genaue Preis hängt von Nagelzustand, Länge und gewünschtem Design ab.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+      <div class="wrap">
+        <div class="gal-head reveal">
+          <div>
+            <div class="t-label" data-i="gal.label">Meine Arbeiten</div>
+            <h2 class="t-h2" style="margin-top:10px" data-i="gal.title">Galerie</h2>
+          </div>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn btn-text" data-i="gal.ig">Instagram</a>
+        </div>
+        
+        <div class="gal-grid reveal d1">
+          <div class="gal-item">
+            <img src="images/gal-1.jpg" alt="Nageldesign Maniküre Göppingen" loading="lazy">
+          </div>
+          <div class="gal-item">
+            <img src="images/gal-2.jpg" alt="Gelmodellage Design" loading="lazy">
+          </div>
+          <div class="gal-item">
+            <img src="images/gal-3.jpg" alt="Babyboomer Nageldesign" loading="lazy">
+          </div>
+          <div class="gal-item">
+            <img src="images/gal-4.jpg" alt="Elegante French Maniküre" loading="lazy">
+          </div>
+          <div class="gal-item">
+            <img src="images/gal-5.jpg" alt="Individuelle Nail Art" loading="lazy">
+          </div>
+        </div>
+
+        <div class="reveal d2" style="display:flex; justify-content:flex-end">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn btn-text" data-i="gal.ig_more">Mehr Arbeiten auf Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section id="why">
+      <div class="wrap">
+        <div class="sh reveal" style="text-align:center; max-width:520px; margin-inline:auto;">
+          <div class="t-label" data-i="why.label">Mein Ansatz</div>
+          <h2 class="t-h2" style="margin-top:10px" data-i="why.title">Warum Kundinnen wiederkommen</h2>
+        </div>
+        <div class="why-grid reveal d1" id="whyGrid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section id="booking">
+      <div class="wrap">
+        <div class="bk-inner">
+          <div class="reveal">
+            <div class="t-label" data-i="bk.label">Online buchen</div>
+            <h2 class="t-h2 bk-title" data-i="bk.title">Jetzt Termin sichern</h2>
+            <p class="bk-sub" data-i="bk.sub">
+              Freien Termin im Kalender wählen — kein Telefonat, keine Wartezeit.
+            </p>
+            <a href="https://calendly.com/mishamyhailiuk/30min" target="_blank" rel="noopener" class="btn btn-light" data-i="bk.btn">
+              Buchungskalender öffnen →
+            </a>
+            
+            <div class="bk-contacts">
+              <a href="https://wa.me/4917192732530" target="_blank" rel="noopener" class="bk-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp — +49 171 9273253
+              </a>
+              <a href="https://t.me/nailsmolly" target="_blank" rel="noopener" class="bk-link">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+                Telegram — @nailsmolly
+              </a>
+              <a href="tel:+4917192732530" class="bk-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 12.7 19.79 19.79 0 01.32 4.1 2 2 0 012.3 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.16 6.16l1.28-.78a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                +49 171 9273253
+              </a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener" class="bk-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+                Instagram — @nailsmollys.de
+              </a>
+            </div>
+          </div>
+          
+          <div class="reveal d2">
+            <div class="calendly-wrap">
+              <div class="calendly-inline-widget" data-url="https://calendly.com/mishamyhailiuk/30min?hide_gdpr_banner=1&background_color=faf8f5&text_color=1c1814&primary_color=1c1814" style="min-width:300px;height:640px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section id="faq">
+      <div class="wrap">
+        <div class="faq-layout">
+          <div>
+            <div class="sh reveal">
+              <div class="t-label" data-i="faq.label">Häufige Fragen</div>
+              <h2 class="t-h2" style="margin-top:10px" data-i="faq.title">FAQ</h2>
+            </div>
+            <div class="faq-list reveal d1" id="faqList">
+              <!-- Populated dynamically via JS -->
+            </div>
+          </div>
+          <div class="faq-aside reveal d2">
+            <div class="faq-box">
+              <h3 class="t-h3" data-i="faq.box1.title">Termin vereinbaren</h3>
+              <p data-i="faq.box1.body">Online buchen — 24/7, schnell und unkompliziert.</p>
+              <a href="#booking" class="btn btn-primary" data-i="faq.box1.cta">Jetzt buchen</a>
+            </div>
+            <div class="faq-box">
+              <h3 class="t-h3" data-i="faq.box2.title">Weitere Fragen?</h3>
+              <p data-i="faq.box2.body">Per WhatsApp oder Telegram erreichbar — Antwort in der Regel innerhalb weniger Stunden.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="ct-inner">
+          <div class="ct-head reveal">
+            <div class="t-label" data-i="ct.label">Kontakt</div>
+            <h2 class="t-h2" data-i="ct.title">So erreichst<br>du mich</h2>
+          </div>
+          <div class="reveal d1">
+            <div class="ct-grid">
+              <div>
+                <div class="ci-label" data-i="ct.l.addr">Standort</div>
+                <div class="ci-val">Göppingen,<br>Baden-Württemberg</div>
+              </div>
+              <div>
+                <div class="ci-label" data-i="ct.l.hours">Öffnungszeiten</div>
+                <div class="ci-val" data-i="ct.hours_val">Di – Sa, 10:00 – 19:00 Uhr</div>
+              </div>
+              <div>
+                <div class="ci-label" data-i="ct.l.phone">Telefon</div>
+                <div class="ci-val"><a href="tel:+4917192732530">+49 171 9273253</a></div>
+              </div>
+              <div>
+                <div class="ci-label">Messenger</div>
+                <div class="ci-val">
+                  <a href="https://wa.me/4917192732530" target="_blank" rel="noopener">WhatsApp</a> ·
+                  <a href="https://t.me/nailsmolly" target="_blank" rel="noopener">Telegram</a>
+                </div>
+              </div>
+              <div>
+                <div class="ci-label">E-Mail</div>
+                <div class="ci-val"><a href="mailto:hello@nailsmollys.de">hello@nailsmollys.de</a></div>
+              </div>
+              <div>
+                <div class="ci-label">Instagram</div>
+                <div class="ci-val"><a href="https://instagram.com/" target="_blank" rel="noopener">@nailsmollys.de</a></div>
+              </div>
+            </div>
+            <div class="ct-ctas">
+              <a href="#booking" class="btn btn-primary" data-i="ct.cta_book">Termin buchen</a>
+              <a href="https://wa.me/4917192732530" target="_blank" rel="noopener" class="btn btn-ghost" data-i="ct.cta_wa">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="ft-inner">
+        <span class="ft-logo">nailsmollys<span>.de</span></span>
+        <ul class="ft-links">
+          <li><a href="#" data-i="ft.imprint">Impressum</a></li>
+          <li><a href="#" data-i="ft.privacy">Datenschutz</a></li>
+          <li><a href="#" data-i="ft.terms">AGB</a></li>
+        </ul>
+      </div>
+      <p class="ft-copy" data-i="ft.copy">© 2025 nailsmollys.de — Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK BUTTONS -->
+  <div class="float-bar" aria-label="Direktkontakt">
+    <a href="https://wa.me/4917192732530" target="_blank" rel="noopener" class="fb fb-wa" aria-label="WhatsApp Chat">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="https://t.me/nailsmolly" target="_blank" rel="noopener" class="fb fb-tg" aria-label="Telegram Chat">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+    </a>
+  </div>
+
+  <!-- CALENDLY ASYNC WIDGET -->
+  <script async src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+  <!-- SCRIPTS -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
